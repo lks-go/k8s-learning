@@ -8,7 +8,7 @@ spec:
     - name: myapp
       image: simple_app
 
-      imagePolicy: Always
+      imagePullPolicy: Always
       ports:
         - name: myapp
           containerPort: 8080
