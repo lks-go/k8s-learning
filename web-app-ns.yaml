@@ -2,3 +2,14 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: web-app-dev
+  namespace: web-app-dev
+spec:
+  containers:
+    - name: web
+      image: simple_app
+    
+      imagePullPolicy: Always
+      ports:
+        - name: web
+          containerPort: 8080
+          protocol: TCP
