@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: web-app-dev
-  namespace: web-app-dev
+  label: web-app-dev
 spec:
   containers:
     - name: web
