@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app
+  namespace: web-app-dev
+spec:
+  containers:
+    - name: myapp
+      image: simple_app
+
+      imagePolicy: Always
+      ports:
+        - name: myapp
+          containerPort: 8080
+          protocol: TCP
