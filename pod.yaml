@@ -6,10 +6,10 @@ metadata:
 spec:
   containers:
     - name: myapp
-      image: localhost:5000/simple_app
+      image: crccheck/hello-world
 
       imagePullPolicy: Always
       ports:
         - name: myapp
-          containerPort: 8080
+          containerPort: 8000
           protocol: TCP
