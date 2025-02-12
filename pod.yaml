@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
     - name: myapp
-      image: simple_app
+      image: localhost:5000/simple_app
 
       imagePullPolicy: Always
       ports:
