@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deplyment
+metadata:
+  name: app-deplyment
+  namespace: web-app-stage
+  labels:
+    app: app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      containers:
+      - name: web
+        image: crccheck/hello-world
+        ports:
+        - containerPort: 8000
+ 
