@@ -1,4 +1,4 @@
 apiVersion: v1
-kind: Namespase
+kind: Namespace
 metadata:
   name: web-app-stage
