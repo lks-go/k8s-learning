@@ -1,0 +1,4 @@
+apiVersion: v1
+kind: Namespase
+metadata:
+  name: web-app-stage
