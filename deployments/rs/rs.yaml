@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: rs-test
+---
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: goapp-replicaset
+  namespace: rs-test
+  labels:
+    app: goapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: goapp
+  template:
+    metadata:
+      labels:
+        app: goapp
+    spec:
+      containers:
+      - name: web
+        image: crccheck/hello-world
+        ports:
+        - containerPort: 8000
