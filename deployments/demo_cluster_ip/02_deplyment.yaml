@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Deployment
 metadata:
-  name: goapp-cluster-ip
+  name: goapp-deplyment
   namespace: demo-cluster-ip
   labels:
     app: goapp-cluster-ip
