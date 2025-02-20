@@ -19,4 +19,4 @@ spec:
       - name: web-cluster-ip
         image: crccheck/hello-world
         ports:
-        - containerPort: 8080
+        - containerPort: 8000
